@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket On Off</title>
+    <style>
+
+.main{
+    margin-left: 700px;
+}
+.btn1{
+            padding: 5px 10px 5px 10px;
+            font-size: 30px;
+            background-color: #000;
+            border-radius: 12px;
+            color: #f1f1f1;
+            margin-left: 50px;
+            
+        }
+        .btn2{
+            padding: 5px 10px 5px 10px;
+            font-size: 30px;
+            border-radius: 12px;
+            color: #f1f1f1;
+            background-color: #000;
+            margin-left: 20px;
+        }
+       .btn1:hover{
+            background-color: rgb(255, 236, 162);
+            color: black;
+        }
+        .btn2:hover{
+            background-color: rgb(255, 236, 162);
+            color: black;
+         }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <img src="colourless.png" alt="off" id="basket">
+    <br><br>
+    <button type="button" class="btn1" onclick="basketOn()">COLOUR</button>
+    <button type="button" class="btn2" onclick="basketOff()">COLOURLESS</button>
+
+    <script>
+        const basketElement = document.getElementById('basket');
+
+        function basketOn() {
+            basketElement.src = "colour.png"; // Turn on the image
+        }
+
+        function basketOff() {
+            basketElement.src = "colourless.png"; // Turn off the image
+        }
+    </script>
+    </div>
+</body>
+</html>
